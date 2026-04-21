@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /assets/js/
+
+Sitemap: https://bridgrs.com/sitemap.xml

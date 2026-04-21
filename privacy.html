@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script>document.documentElement.classList.add('js');</script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#060814" />
+
+  <title>Privacy Policy — Bridgrs</title>
+  <meta name="description" content="Bridgrs Privacy Policy. How we collect, use, and protect data — including Gmail data handled under Google's Limited Use requirements." />
+  <link rel="canonical" href="https://bridgrs.com/privacy.html" />
+  <meta name="robots" content="index, follow" />
+
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+<div class="cursor-glow" aria-hidden="true"></div>
+
+<!-- ── Nav ─────────────────────────────────── -->
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="/" class="brand">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12 L10 12 M14 12 L20 12 M10 8 L14 16 M14 8 L10 16"/></svg>
+      </span>
+      Bridgrs
+    </a>
+    <ul class="nav-links">
+      <li><a href="/#capabilities">Capabilities</a></li>
+      <li><a href="/#sectors">Sectors</a></li>
+      <li><a href="/#how">How it works</a></li>
+      <li><a href="/#trust">Trust</a></li>
+    </ul>
+    <div class="nav-actions">
+      <a href="https://app.bridgrs.com" class="btn btn-ghost">Sign in</a>
+      <a href="https://app.bridgrs.com" class="btn btn-primary">Start free</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ── Hero ────────────────────────────────── -->
+<section class="page-hero">
+  <div class="container">
+    <span class="eyebrow">Legal / Privacy</span>
+    <h1>Privacy policy</h1>
+    <p>How Bridgrs collects, uses, and protects your data — written in the plainest language we could manage without losing the legal weight.</p>
+    <div class="page-hero-meta">
+      <span>Effective: 1 April 2026</span>
+      <span>Updated: 20 April 2026</span>
+      <span>Version 2.0</span>
+    </div>
+  </div>
+</section>
+
+<!-- ── Content ─────────────────────────────── -->
+<article class="prose">
+
+  <h2>1. Who we are</h2>
+  <p>Bridgrs ("Bridgrs", "we", "us", "our") operates the application at <strong>app.bridgrs.com</strong> and the marketing site at <strong>bridgrs.com</strong>. Bridgrs is an email operations platform built for business development teams running high-volume outreach.</p>
+  <p>This policy covers both the application and the marketing site. By creating an account or connecting a mailbox, you agree to the terms described below.</p>
+
+  <h2>2. Information we collect</h2>
+  <p>We collect only what we need to run the service. Categories:</p>
+  <ul>
+    <li><strong>Account data</strong> — name, work email, hashed password or OAuth identity provider subject ID, organization name.</li>
+    <li><strong>Email metadata</strong> — sender address, recipient addresses, subject line, Message-Id, thread identifier, timestamp, Gmail label IDs, and the AI classification label we assign (e.g. <em>Interview Confirmed</em>, <em>Action Required</em>, <em>Interested</em>, <em>Out of Office</em>, <em>Unsubscribed</em>).</li>
+    <li><strong>Usage data</strong> — pages visited in app, feature toggles flipped, dashboard filters used. Collected via first-party analytics only.</li>
+    <li><strong>Device / connection data</strong> — IP address, browser user-agent, session cookie ID for the purposes of authentication and abuse prevention.</li>
+    <li><strong>Support data</strong> — anything you email us at <code>hello@bridgrs.com</code> or <code>privacy@bridgrs.com</code>.</li>
+  </ul>
+  <p>We do <strong>not</strong> store the body content of your emails beyond the in-memory window required to classify them. See Section 4.</p>
+
+  <h2 id="limited-use">3. Google API Services — Limited Use disclosure</h2>
+
+  <div class="callout">
+    <h3>Google API Services User Data Policy</h3>
+    <p>Bridgrs's use and transfer of information received from Google APIs to any other app will adhere to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the <strong>Limited Use</strong> requirements.</p>
+  </div>
+
+  <p>When you connect a Google account to Bridgrs, we access Gmail data <strong>only</strong> to deliver the user-facing features described on bridgrs.com and in the application. Specifically:</p>
+  <ul>
+    <li>We do <strong>not</strong> use Gmail data to serve advertising, including retargeting or personalised ads.</li>
+    <li>We do <strong>not</strong> sell or transfer Gmail data to third parties except the limited, named sub-processors listed in Section 7, and then only for the purposes described.</li>
+    <li>We do <strong>not</strong> use Gmail data to train, fine-tune, improve, or otherwise feed any generalised or large-language AI model.</li>
+    <li>We do <strong>not</strong> allow humans to read Gmail data except (a) with your explicit consent, (b) for security investigation, abuse detection or enforcement, (c) to comply with applicable law, or (d) for internal operations where the data has been aggregated and anonymised.</li>
+  </ul>
+
+  <h3>Scopes we request and why</h3>
+  <table class="scopes-table">
+    <thead>
+      <tr>
+        <th>Scope</th>
+        <th>Why Bridgrs needs it</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><code>https://www.googleapis.com/auth/gmail.readonly</code></td>
+        <td>To read inbound replies so the Bridgrs AI classifier can tag each thread (<em>Interview Confirmed</em>, <em>Action Required</em>, etc.) and so your dashboard can show reply rates, interview rates, and per-rep performance.</td>
+      </tr>
+      <tr>
+        <td><code>https://www.googleapis.com/auth/gmail.send</code></td>
+        <td>To send replies that <em>you</em> (or your team members) approve through the Bridgrs AI-draft UI. Bridgrs never sends email without an explicit user-initiated send action.</td>
+      </tr>
+      <tr>
+        <td><code>https://www.googleapis.com/auth/gmail.modify</code></td>
+        <td>(Optional; workspace-configurable) To apply Gmail labels that mirror Bridgrs classifications inside your Gmail, and to mark replies as read from within Bridgrs.</td>
+      </tr>
+      <tr>
+        <td><code>https://www.googleapis.com/auth/userinfo.email</code>, <code>openid</code>, <code>profile</code></td>
+        <td>To identify your Google account during the sign-in flow and match it to your Bridgrs workspace.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h3>How Gmail access works end-to-end</h3>
+  <ol>
+    <li>You connect a Google account via standard OAuth 2.0. Bridgrs never handles your Google password directly.</li>
+    <li>The refresh token is stored encrypted at rest, written only by server-side edge functions using service-role credentials. It is never sent to a browser.</li>
+    <li>A scheduled worker fetches new inbound messages at a cadence between 1 and 30 minutes depending on time of day.</li>
+    <li>For each inbound message, the body is loaded into server memory, passed to the classifier, and the resulting label is written to our database. The body itself is <strong>discarded from memory</strong> inside the same request — typically within a second.</li>
+    <li>When you approve an AI-drafted reply and click <em>Send</em>, Bridgrs uses the <code>gmail.send</code> scope to deliver the message from your Gmail account.</li>
+  </ol>
+
+  <h3>Revoking access</h3>
+  <p>You can revoke Bridgrs's access to your Google account at any time — either inside Bridgrs (<em>Settings → Email Providers → Disconnect</em>) or via <a href="https://myaccount.google.com/permissions">Google Account permissions</a>. On disconnect Bridgrs revokes the refresh token against Google and stops all future sync and classification for that mailbox.</p>
+
+  <h2>4. Email body — what actually happens</h2>
+  <p>This is the most sensitive thing we do, so it's worth saying plainly:</p>
+  <ul>
+    <li>We <strong>never write the email body to disk, database, or any long-term storage</strong>.</li>
+    <li>The body exists in the memory of the classification worker for the duration of a single request (under 3 seconds in the typical case).</li>
+    <li>After the classification completes, the body reference is dropped and the memory is reclaimed by the garbage collector on the next cycle.</li>
+    <li>What we retain is the classification label itself (e.g. <em>Interview Confirmed</em>), the message headers required to reconstruct the thread view (From, To, Cc, Subject, Date, Message-Id, In-Reply-To), and the Gmail thread identifier.</li>
+  </ul>
+  <p>If you want to verify this, point a compliance auditor at <code>security@bridgrs.com</code> and we will walk through the classification pipeline and database schema with them.</p>
+
+  <h2>5. How we use your data</h2>
+  <ul>
+    <li>To sync your mailboxes, classify inbound replies, and render your dashboard.</li>
+    <li>To compute per-rep and per-campaign analytics inside your workspace — <em>not</em> across workspaces.</li>
+    <li>To send service notices (security alerts, billing changes, critical outages).</li>
+    <li>To respond to support requests you initiate.</li>
+    <li>To detect, investigate, and prevent abuse, spam, and security incidents.</li>
+    <li>To comply with law enforcement requests when legally compelled.</li>
+  </ul>
+
+  <h2>6. Legal bases for processing (GDPR / UK GDPR)</h2>
+  <p>If you are in the EEA or the UK, we process your data under one or more of these legal bases:</p>
+  <ul>
+    <li><strong>Contract</strong> — to deliver the Bridgrs service you or your organization signed up for.</li>
+    <li><strong>Legitimate interests</strong> — to secure the service, prevent fraud, and improve reliability. These interests are balanced against your rights.</li>
+    <li><strong>Consent</strong> — for optional processing such as product-update emails, which you can withdraw at any time.</li>
+    <li><strong>Legal obligation</strong> — where required by applicable law.</li>
+  </ul>
+
+  <h2>7. Sub-processors</h2>
+  <p>We use a short list of infrastructure providers to run Bridgrs. Each operates under a Data Processing Agreement and only processes data as instructed:</p>
+  <ul>
+    <li><strong>Supabase (AWS us-east-1)</strong> — primary database, authentication, realtime.</li>
+    <li><strong>Fly.io</strong> — voice AI WebSocket worker (used only when your workspace enables voice AI; not used for email processing).</li>
+    <li><strong>Google Cloud (Gemini API)</strong> — AI classification under a zero-data-retention agreement.</li>
+    <li><strong>Hostinger</strong> — static hosting for the bridgrs.com marketing site (this page).</li>
+    <li><strong>Resend / Postmark</strong> — transactional service emails only; never customer outreach email.</li>
+    <li><strong>Twilio</strong> — used only if your workspace enables voice features; not used for email processing.</li>
+  </ul>
+  <p>We do not sell data. We do not share data with advertising networks. We do not rent lists.</p>
+
+  <h2>8. Where your data is stored</h2>
+  <p>Primary storage is in the United States (AWS us-east-1). Classification requests may hit Google Cloud regions selected automatically for latency. For EEA/UK customers requiring data residency in-region, contact <code>security@bridgrs.com</code> and we will discuss workspace-level regional isolation.</p>
+
+  <h2>9. Security measures</h2>
+  <ul>
+    <li>TLS 1.2+ on all traffic to and from Bridgrs.</li>
+    <li>AES-256 encryption at rest for database storage.</li>
+    <li>Row-level security (RLS) enforced in Postgres — every query is automatically scoped by workspace and role.</li>
+    <li>Sensitive credentials (OAuth refresh tokens) accessible only to service-role edge functions, never to browser clients.</li>
+    <li>Hardened CI/CD pipeline with required reviews on protected branches.</li>
+    <li>Annual penetration test; report available to enterprise customers under NDA.</li>
+  </ul>
+
+  <h2>10. Data retention and deletion</h2>
+  <ul>
+    <li>Email metadata and classifications are retained for the lifetime of your account.</li>
+    <li>You can delete individual conversations, entire mailboxes, or your whole workspace at any time from the in-app settings.</li>
+    <li>Upon account deletion, all workspace data — metadata, classifications, analytics rows, audit log entries — is permanently deleted within 24 hours. Backups age out within 30 days.</li>
+    <li>Disconnecting a mailbox revokes the OAuth refresh token against Google in the same request.</li>
+  </ul>
+
+  <h2>11. Your rights</h2>
+  <p>Depending on where you live, you may have the right to:</p>
+  <ul>
+    <li>Access the data we hold about you.</li>
+    <li>Correct inaccurate data.</li>
+    <li>Delete your data (right to be forgotten).</li>
+    <li>Receive your data in a portable format.</li>
+    <li>Object to or restrict certain processing.</li>
+    <li>Lodge a complaint with a supervisory authority.</li>
+  </ul>
+  <p>To exercise any of these rights, email <a href="mailto:privacy@bridgrs.com">privacy@bridgrs.com</a>. We respond within 30 days.</p>
+
+  <h2>12. Cookies</h2>
+  <p>The marketing site uses no advertising or tracking cookies. The application uses first-party session cookies strictly for authentication and a small number of localStorage keys (active workspace, active section, preferred theme). No third-party cookies are set by Bridgrs.</p>
+
+  <h2>13. Children</h2>
+  <p>Bridgrs is a B2B product. We do not target or knowingly collect data from anyone under 18.</p>
+
+  <h2>14. Changes</h2>
+  <p>We'll update this page when we change how we handle data. Material changes are announced via product notice inside the application at least 14 days before they take effect. The <em>Updated</em> date at the top always reflects the most recent version.</p>
+
+  <h2>15. Contact</h2>
+  <p>
+    Privacy questions or data requests: <a href="mailto:privacy@bridgrs.com">privacy@bridgrs.com</a><br/>
+    Security issues: <a href="mailto:security@bridgrs.com">security@bridgrs.com</a><br/>
+    General: <a href="mailto:hello@bridgrs.com">hello@bridgrs.com</a>
+  </p>
+
+</article>
+
+<!-- ── Footer ─────────────────────────────── -->
+<footer>
+  <div class="container">
+    <div class="footer-inner">
+      <div>
+        <div class="footer-brand">
+          <span class="brand-mark" aria-hidden="true" style="width:26px; height:26px; border-radius:7px">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12 L10 12 M14 12 L20 12 M10 8 L14 16 M14 8 L10 16"/></svg>
+          </span>
+          Bridgrs
+        </div>
+        <p class="footer-brand-line">The operations layer for BD teams running email outreach at scale.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Product</h4>
+        <ul>
+          <li><a href="/#capabilities">Capabilities</a></li>
+          <li><a href="/#sectors">Sectors</a></li>
+          <li><a href="/#how">How it works</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="mailto:hello@bridgrs.com">Contact</a></li>
+          <li><a href="mailto:security@bridgrs.com">Security</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="privacy.html">Privacy</a></li>
+          <li><a href="terms.html">Terms</a></li>
+          <li><a href="privacy.html#limited-use">Limited use</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 BRIDGRS — ALL RIGHTS RESERVED</span>
+      <span>HELLO@BRIDGRS.COM</span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js" defer></script>
+
+</body>
+</html>
