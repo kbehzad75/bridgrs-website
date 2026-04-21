@@ -33,7 +33,7 @@
   <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..700&family=Geist:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="assets/css/style.css" />
 
   <!-- Structured data -->
@@ -76,6 +76,19 @@
 <body>
 
 <div class="cursor-glow" aria-hidden="true"></div>
+<div class="bx-grain" aria-hidden="true"></div>
+
+<!-- Hidden SVG defs: shared gradient for all bridge-wire instances -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <linearGradient id="bxWireGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#A78BFA" stop-opacity="0"/>
+      <stop offset="15%" stop-color="#A78BFA" stop-opacity="1"/>
+      <stop offset="85%" stop-color="#38BDF8" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#38BDF8" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+</svg>
 
 <!-- ── Nav ─────────────────────────────────── -->
 <nav class="nav">
@@ -116,8 +129,9 @@
         <span class="word-box"><span>One</span></span>
         <span class="word-box"><span>operations</span></span>
         <span class="word-box"><span>layer.</span></span>
-        <span class="word-box"><span>Every</span></span>
-        <span class="word-box"><span class="grad-text">revenue conversation.</span></span>
+        <span class="word-box"><span class="serif-accent">Every</span></span>
+        <span class="word-box"><span class="serif-accent grad-text">revenue</span></span>
+        <span class="word-box"><span class="serif-accent grad-text">conversation.</span></span>
       </h1>
       <p class="hero-lede">
         Bridgrs unifies <strong>email, voice, meetings, and AI automation</strong> into one workspace. Classify replies in under a second. Route calls to the right rep. Record and transcribe every meeting. Deploy AI agents on your phone lines. One surface, one source of truth, one RBAC model — for teams of 1 to 500.
@@ -150,9 +164,8 @@
           <svg class="flow-svg" viewBox="0 0 1200 420" preserveAspectRatio="none" aria-hidden="true">
             <defs>
               <linearGradient id="flowGrad" x1="0%" y1="50%" x2="100%" y2="50%">
-                <stop offset="0%" stop-color="#7c3aed"/>
-                <stop offset="50%" stop-color="#06e6ff"/>
-                <stop offset="100%" stop-color="#34d399"/>
+                <stop offset="0%" stop-color="#A78BFA"/>
+                <stop offset="100%" stop-color="#38BDF8"/>
               </linearGradient>
             </defs>
             <path class="flow-path" d="M 120 210 Q 240 100 360 210 T 600 210 T 840 210 T 1080 210" />
@@ -401,6 +414,13 @@
       </div>
     </div>
   </section>
+
+  <!-- ── Bridge-wire divider ────────────── -->
+  <div class="bx-wire reveal" aria-hidden="true">
+    <svg viewBox="0 0 1600 120" preserveAspectRatio="none">
+      <path class="line" d="M 0 60 Q 200 10 400 60 T 800 60 T 1200 60 T 1600 60" />
+    </svg>
+  </div>
 
   <!-- ── Sectors ─────────────────────────── -->
   <section id="sectors">
@@ -666,6 +686,13 @@
       </div>
     </div>
   </section>
+
+  <!-- ── Bridge-wire divider (echo) ──────── -->
+  <div class="bx-wire reveal" aria-hidden="true">
+    <svg viewBox="0 0 1600 120" preserveAspectRatio="none">
+      <path class="line" d="M 0 60 Q 300 100 600 60 T 1200 60 T 1600 60" />
+    </svg>
+  </div>
 
   <!-- ── CTA ─────────────────────────── -->
   <section class="cta">
