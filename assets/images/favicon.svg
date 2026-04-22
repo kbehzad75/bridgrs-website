@@ -1,5 +1,10 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-  <rect width="64" height="64" rx="14" fill="#161410"/>
-  <text x="32" y="44" font-family="Georgia, serif" font-size="38" fill="#f5f0e6" text-anchor="middle" font-weight="400">B</text>
-  <circle cx="48" cy="18" r="5" fill="#c6492d"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" role="img" aria-label="Bridgrs">
+  <title>Bridgrs</title>
+  <!-- Near-black tile — matches what the browser auto-generated, Nocturne-aligned -->
+  <rect x="0" y="0" width="32" height="32" rx="7" fill="#0A0A0C"/>
+  <!-- Italic serif capital B in cream — bold, high-contrast, legible at 16px -->
+  <text x="16.5" y="25.2" text-anchor="middle"
+        font-family="'Fraunces', 'Playfair Display', Georgia, 'Times New Roman', serif"
+        font-style="italic" font-weight="700" font-size="28"
+        letter-spacing="-0.03em" fill="#F5F3EE">B</text>
 </svg>
